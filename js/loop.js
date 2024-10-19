@@ -34,6 +34,7 @@
 
 
 
+
 // function asd(){
 //    if(true){
 //       let a=10;
@@ -45,8 +46,7 @@
 // console.log("out side function"+a)
 
 
-
-
+  
 // for(i=1;i<=5;i++)
 // {
 // str=''

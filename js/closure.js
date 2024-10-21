@@ -1,10 +1,12 @@
 function asd(a,b){
-    function myfunction(){
+    function MyFunction(){
         c=a+b
         return c
     }
-    return myfunction
+    return MyFunction
+
 }
+
 let x=asd(5,3)
 let y=x()
 console.dir(x);

@@ -120,51 +120,55 @@
 
 
 
+let Todos=[]
 
-todos=[]
-while (true) {
-   const choice=prompt("[1] add todo \n [2]display todo \n [3] edit todo \n [4]delet todo \n [5]exit")
-if 
-(choice==1){
-   const todo = prompt("add todo")
-   todos.push(todo)
-}
-else if(choice==2){
-   str=``
-   for(i=0;i<todos.length;i++){
-      str+=(`[${(i+1)}] ${todos[i]} \n`)
+
+while(true){
+   const choice=parseInt(prompt("1:Add todo \n 2:Display \n 3:Edit \n 4:Delect \n 5:Exit"))
+   if(choice==1){
+       
+      const name=prompt("enter name") 
+      const num=parseInt(prompt("enter number"))
+   //   x={name:name,num:num}
+   //   console.log(x);
+      Todos.push({name,num})
+
+      
    }
-
-   alert(str)
-}
-else if(choice==3){
-   str=``
-   for(i=0;i<todos.length;i++){
-      str+=`[${i+1}] ${todos[i]}`
+   else if(choice==2){
+       str=``
+       str1=``
+       for(i=0;i<Todos.length;i++){
+          str+=Todos[i].name
+          str+=" :"
+          str+=Todos[i].num
+          str+="\n"
+       }
+       alert(`${str} \n `)
    }
-   const index=prompt(`${str} \n enter choice`)
-   const updatetodo=prompt("enter data to be update")
-   todos[index-1]=updatetodo
-   alert("successfully updated")
-
-}
-else if(choice==4){
-   str=``
-   for(i=0;i<todos.length;i++){
-      str+=`[${i+1}] ${todos[i]}`
+   else if(choice==3){
+       str=``
+       for(i=0;i<Todos.length;i++){
+           str+=(`${(i+1)} ${Todos[i]} \n`)
+       }
+       const index=prompt(`${str} \n enter the no to edit `)
+       const edit=prompt("enter the data for update")
+       Todos[index-1]=edit
+       alert("succesfully updated")
+       
    }
-   n=parseInt(prompt`${str} \n enter the deleting elelment`)
-   todos.splice(a-1,1)
-   alert("succeccfully delelted")
+   else if(choice==4){
+       str=``
+       for(i=0;i<Todos.length;i++){
+           str+=(`${(i+1)} ${Todos[i]} \n`)
+       }s.splice(a-1,1)
+       alert("succesfully Delected")
 
-}
-else if(choice==5){
-   break;
-}
-
-else{
-alert("invalid option")
-}
-
-
+   }
+   else if(choice==5){
+       break
+   }
+   else{
+       alert("invalid no")
+   }
 }

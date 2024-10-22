@@ -41,10 +41,12 @@ while(true){
    else if(choice==3){
        str=``
        for(i=0;i<Todos.length;i++){
-           str+=(`${(i+1)} ${Todos[i]} \n`)
+           str+=(`${(i+1)} 
+           ${Todos[i]} \n`)
        }
        const index=prompt(`${str} \n enter the no to edit `)
        const edit=prompt("enter the data for update")
+       const num=parseInt(prompt("enter number"))
        Todos[index-1]=edit
        alert("succesfully updated")
        
@@ -64,5 +66,3 @@ while(true){
        alert("invalid no")
    }
 }
-
-     

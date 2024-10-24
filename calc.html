@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="main">
+        <h1>CALCULATOR</h1>
+        <div class="grid">
+            <div class="input" >
+                <input type="text" id="valu1">
+            </div>
+            <div class="input" >
+                <input type="text" id="valu2">
+            </div>
+        </div>
+        <div class="grid1">
+            <button id="sum" onclick="ab()">+</button>
+            <button id="diff" onclick="diff()">-</button>
+            <button id="multi" onclick="mul()">*</button>
+            <button id="divi" onclick="div()">/</button>
+            <button class="clear" onclick="clear()">CLEAR</button>
+        </div>
+        <h1 id="result"></h1>
+        <div class="results">
+            <p id="p"></p>
+        </div>
+    </div>
+    
+
+    <script src="./js/calc.js"></script>
+</body>
+</html>

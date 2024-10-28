@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+}
+.main{
+    height: 730px;
+    width: 100%;
+    background-image: linear-gradient(to right,rgb(82, 82, 205), pink);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.subdiv{
+    height: 180px;
+    width: 994px;
+    /* padding-left: 30px; */
+    /* background-color: rgba(36, 53, 113, 0.373); */
+
+    /* background-color: rgba(0, 0, 0, 0.836); */
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 150px 10px 150px 10px 130px 10px 150px 150px;
+    gap: 33.5px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;    
+}
+.time{
+    /* background-color: rgba(36, 53, 113, 0.373); */
+    width: 150px;
+    height: 180px;
+    margin-left: 0;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    cursor: pointer;
+    text-align: center;
+}
+.time h1:hover{
+    /* color: rgba(100, 148, 237, 0.475); */
+    color: tomato;
+}
+h1{
+    color: beige;
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial,sans-serif;
+    text-transform: uppercase;
+    text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+}
+h6{
+    color: rgba(50, 46, 42, 0.819);
+    font-size: 10px;
+    margin-bottom: 0;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial,sans-serif;
+    text-transform: uppercase;  
+    text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    letter-spacing: 2px;
+    /* position: absolute; */
+}

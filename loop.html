@@ -4,9 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            
+            background-color: beige;
+        }
+        .div{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        input{
+            margin-top: 100px;
+            height: 40px;
+            background-color: cadetblue;
+            opacity: 0.99;
+            color: brown;
+            border-radius: 5px;
+            border: 1px solid lightsalmon;
+
+        }
+        ::placeholder{
+            color: brown;
+        }
+        .div button{
+            margin-top: 100px;
+            height: 40px;
+            width: 100px;
+            border-radius: 5px;
+            background-color: cornflowerblue;
+            /* font-size: 16px; */
+            /* font-family: sans-serif; */
+            text-transform: uppercase;
+            font-weight: 600;
+            border: 1px solid black;
+        }
+        button{
+            height: 20px;
+            width: 70px;
+            border-radius: 5px;
+            background-color:teal;
+            /* font-size: 16px; */
+            /* font-family: sans-serif; */
+            text-transform: uppercase;
+            /* font-weight: 600; */
+            border: 1px solid black;
+        }
+        li{
+            margin-left: 190px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>suiiiiiiiiiiiiiiiiiiii</h1>
-    <script src="js/closure.js"></script>
+    <div class="div">
+        <input type="text" id="task" placeholder="name">
+        <input type="text" id="task2" value="" placeholder="number"> <br>
+        <button onclick="add()" >submit</button>
+    </div>    
+    <ul id="tasks">
+    </ul>
+    <script src="js/1task.js"></script>
 </body>
 </html>

@@ -42,12 +42,13 @@ function asd() {
     const date=new Date()
     const y=date.getHours()
     if(y>=12){
-        document.getElementById("hour").textContent=y%12
+        document.getElementById("hour").textContent=y-12
         document.getElementById("am").textContent="pm"
 
         
     }
     else{
+        document.getElementById("hour").textContent=y
         document.getElementById("am").textContent="am"
 
     }

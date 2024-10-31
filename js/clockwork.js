@@ -73,3 +73,38 @@ function ad() {
 }
 ad()
 
+
+
+// array destrection
+
+// a=[1,2,3,4,5,6]
+// const[b,,d,,,g]=a
+// console.log(b,d,g);
+
+
+// spread destrection
+
+// a=[10,20,30,40]
+// b=[...a]
+// b[3]+=1
+// console.log(b);
+// console.log(a);
+
+
+// nested destructtion error an
+
+// a=[{name:"alan",age:20,mark:32}]
+// const {name,mark}=a
+// console.log(name);
+
+
+// largest num using loop
+
+a=[10,20,90,60,100,70,80]
+  let b=0
+for(i=0;i<a.length;i++){
+    if(a[i]<b){
+        b=a[i]
+    }
+}
+console.log(b);

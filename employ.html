@@ -11,18 +11,32 @@
             margin-top: 10px;
             margin-bottom: 50px;
             color: #171717;
-            background-color:rgba(0, 139, 139, 0.245);
+            background-color:rgba(0, 139, 139, 0.919);
             border: 1px solid blueviolet;
             height: 40px;
             border-radius: 10px;
         }
+        table{
+          /* background-color: rgba(217, 217, 172, 0.699);*/
+           background-color:rgba(0, 139, 139, 0.184);
+
+          border: 1px solid black;
+        }
+        tr{
+          border: 1px solid rgba(0, 0, 0, 0.473);
+        }
         body{
             background-color: rgba(240, 128, 128, 0.308);
+        }
+        h1{
+          text-transform: capitalize;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
     </style>
 </head>
 <body>
     <div class="container m-5">
+      <h1>employe detailes</h1>
         <input type="text" id="filter">
         <table class="table">
             <thead>
@@ -37,10 +51,6 @@
               </tr>
             </thead>
             <tbody id="emp">
-              <tr >
-    
-
-              </tr>
             </tbody>
           </table>
     </div>

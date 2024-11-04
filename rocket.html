@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .main{
+            height: 730px;
+            width: 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+        img{
+            height: 50px;
+            position: absolute;
+            transition: ease-in-out;
+
+        }
+        #myImage{
+            /* box-shadow: 0px 0px 30px 20px red; */
+            filter: drop-shadow(0 15px 5px rgba(255, 255, 0, 0.7));
+
+        }
+        button{
+            border:transparent ;
+            height: 50px;
+            position: absolute;
+            background-color: rgb(0, 0, 0);
+            top: 00px;
+        }
+        button img{
+            /* height: 30px; */
+            position: absolute;
+            filter: invert(100%);
+        }
+        #top{
+            top: 540px;
+            /* background-color: rgb(222, 133, 18); */
+            left:740px;
+            transform: rotate(90deg);
+        }
+        #left{
+            top: 600px;
+            /* background-color: rgb(222, 133, 18); */
+            left:680px;
+            transform: rotate(0deg);
+        }
+        #right{
+            top: 600px;
+            /* background-color: rgb(222, 133, 18); */
+            left:800px;
+            transform: rotate(180deg);
+        }
+        #down{
+            top: 650px;
+            /* background-color: rgb(222, 133, 18); */
+            left:740px;
+            transform: rotate(270deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="./img/rocket-ship_4949843.png" id="myImage" alt="">
+        <!-- <button onclick="moveImageUp()">
+            <img src="./img/arrow.png" alt="">
+        </button> -->
+    </div>
+    <button onclick="moveImageUp()"><img src="./img/arrow.png" id="top" alt=""></button>
+    <button onclick="down()"><img src="./img/arrow.png" alt="" id="down"></button>
+    <button onclick="left()"><img src="./img/arrow.png" alt="" id="left"></button>
+    <button onclick="right()"><img src="./img/arrow.png" alt="" id="right"></button>
+
+
+
+    <script>
+function moveImageUp() {
+    let rotationAngle = 0;
+    let moveDown = 0;
+    const image = document.getElementById("myImage");
+    const currentTop = parseInt(window.getComputedStyle(image).top) || 0;
+    image.style.top = (currentTop - 50) + "px";
+    rotationAngle += 0;
+    moveDown += 50;
+    image.style.transform = `translateY(${moveDown}px) rotate(${rotationAngle}deg)`;
+}
+function down() {
+    let rotationAngle = 0;
+    let moveDown = 0;
+    const image = document.getElementById("myImage");
+    const currentTop = parseInt(window.getComputedStyle(image).top) || 0;
+    image.style.top = (currentTop + 50) + "px";
+    rotationAngle += 180;
+    moveDown += 50;
+    image.style.transform = `translateY(${moveDown}px) rotate(${rotationAngle}deg)`;
+}
+function left() {
+    let rotationAngle = 0;
+    let moveDown = 0;
+    const image = document.getElementById("myImage");
+    const currentTop = parseInt(window.getComputedStyle(image).left) || 0;
+    image.style.left = (currentTop - 50) + "px";
+    rotationAngle += 270;
+    moveDown += 50;
+    image.style.transform = `translateY(${moveDown}px) rotate(${rotationAngle}deg)`;
+}
+function right() {
+    let rotationAngle = 0;
+    let moveDown = 0;
+    const image = document.getElementById("myImage");
+    const currentTop = parseInt(window.getComputedStyle(image).left) || 0;
+    image.style.left = (currentTop + 50) + "px";
+    rotationAngle += 90;
+    moveDown += 50;
+    image.style.transform = `translateY(${moveDown}px) rotate(${rotationAngle}deg)`;
+    
+}
+    </script>
+</body>
+</html>

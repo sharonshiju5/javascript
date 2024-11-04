@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .main{
+            height: 1000px;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            position: relative;
+        }
+        .circle{
+            height: 150px;
+            width: 150px;
+            border-radius: 150px;
+            border: 1px solid royalblue;
+            position: absolute;
+            transition: 0.1s ease-in-out;
+            background-image: url("../img/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAyL3Jhd3BpeGVsX29mZmljZV80Nl8zZF9yZW5kZXJfaWNvbl9vZl9hbmdyeV9lbW9qaV95ZWxsb3dfZmFjZV9taV9kZTkzNGM4ZC1iN2U2LTRjYWEtODI1OC1mN2VjMWQ0YWNlODYucG5n.webp");
+            background-repeat: no-repeat;
+            box-shadow: 0px 0px 30px 20px red;
+            background-size: cover;
+            transform: translate(-50%,-50%);
+            animation: move 1s ease-out infinite;
+            
+        }
+        @keyframes move {
+            form{
+                box-shadow: 0px 0px 30px 20px red;
+                /* -webkit-box-shadow: 1px 0 4.5px 31px #dddddd;
+                -moz-box-shadow: 1px 0 4.5px 31px #dddddd;
+                box-shadow: 1px 0 4.5px 31px #dddddd; */
+
+            }
+            to{
+                box-shadow: 0PX 0PX 0PX 0PX;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="circle" id="movec" ></div>
+    </div>
+    <script src="./js/mouce.js"></script>
+</body>
+</html>

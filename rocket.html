@@ -16,6 +16,9 @@
             justify-content: center;
             align-items: center;
             background-color: black;
+            background-image: url("./img/Planet\ Cartoon\ In\ Space\ Animation\ Background\ Collection\ Clip.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         img{
             height: 70px;
@@ -43,13 +46,77 @@
             border:transparent ;
             height: 50px;
             position: absolute;
-            background-color: rgb(0, 0, 0);
+            background-color: transparent;
             top: 00px;
         }
         button img{
             /* height: 30px; */
             position: absolute;
             filter: invert(100%);
+        }
+        .met{
+            position: absolute;
+            left: 50px;
+            top: 650px;
+            transform: rotate(270deg);
+            animation: move2 8.8s ease-out infinite;
+            /* filter: drop-shadow(0 -50px 25px rgba(255, 255, 0, 0.7)); */
+
+        }
+        @keyframes move2 {
+            form{
+
+                filter: drop-shadow(0 15px 5px rgba(255, 255, 0, 0.7));
+            }
+            to{
+                filter: drop-shadow(0 15px 5px rgba(0, 0, 0, 0));
+                left: 90%;
+                top: 0%;
+                margin-left: 300px;
+            }
+        }
+        .ufo{
+            position: absolute;
+            left: 30%;
+            margin-top: 150px;
+            top: 90%;
+            left: 800px;
+            animation: move3 8.8s ease-out infinite;
+            filter: drop-shadow(0 15px 5px rgba(255, 255, 0, 0.7));
+
+        }
+        @keyframes move3 {
+            form{
+
+                filter: drop-shadow(0 15px 5px rgba(255, 255, 0, 0.7));
+            }
+            to{
+                filter: drop-shadow(0 15px 5px rgba(0, 0, 0, 0));
+                /* left: 90%; */
+                top: 0%;
+                margin-top: 10px;
+                left: -100px;
+                margin-left: 600px;
+            }
+        }
+        .shower{
+            position: absolute;
+            left: -100px;
+            height: 500px;
+            animation: move4 18.8s ease-out infinite;
+            opacity: 0.5;
+        }
+        @keyframes move4 {
+            form{
+
+                filter: drop-shadow(0 15px 5px rgba(255, 255, 0, 0.7));
+            }
+            to{
+                filter: drop-shadow(0 15px 5px rgba(0, 0, 0, 0));
+                left: 90%;
+                /* top: 50%; */
+                /* margin-left: 600px; */
+            }
         }
         #top{
             top: 540px;
@@ -83,6 +150,9 @@
         <!-- <button onclick="moveImageUp()">
             <img src="./img/arrow.png" alt="">
         </button> -->
+        <img src="./img/Meteor png logo - 154x166.png" class="met" alt="">
+        <img src="./img/klipartz.com.png" class="ufo" alt="">
+        <img src="./img/—Pngtree—meteor shower_5633293.png" class="shower" alt="">
     </div>
     <button onclick="moveImageUp()"><img src="./img/arrow.png" id="top" alt=""></button>
     <button onclick="down()"><img src="./img/arrow.png" alt="" id="down"></button>

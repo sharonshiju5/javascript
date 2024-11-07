@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>work</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        select{
+            border: 1px solid black;
+            margin-top: 50px;
+            width: 300px;
+            height: 50px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <select onchange="log(`min`)" name="" id="min">
+    </select>
+    <select onchange="log(`hou`)" name="" id="hou">
+    </select>
+    <select onchange="log(`date`)" name="" id="date">
+    </select>
+    <select onchange="log(`month`)" name="" id="month">
+    </select>
+    <select onchange="log(`day`)" name="" id="day">
+    </select>
+    <select onchange="log(`year`)" name="" id="year">
+    </select>
+
+<script src="./js/work.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            background-color:  indianred;
+            margin: 0;
+        }
+        button{
+            
+            background-color: rgba(72, 82, 92, 0.3);
+            margin-top: 50px;
+            height: 30px;
+            width: 120px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        table{
+            margin-top: 50px;
+            width: 70%;
+            border: 1px solid black;
+            border-collapse: collapse;
+            color: rgba(0, 0, 0, 0.866);
+            /* background-color: rgba(95, 158, 160, 0.29); */
+            background-color: rgba(250, 235, 215, 0.366);
+
+            font-size: 20px;
+            text-transform: uppercase;
+            font-family: sans-serif;
+        }
+        th,td{
+            border: 1px solid black;
+            height: 50px;
+
+        }
+        th{
+            background-color: rgb(197, 113, 102);
+        }
+    </style>
+</head>
+<body>
+    <!-- <button id="btn">click here</button> -->
+    
+
+    <table >
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>userid</th>
+                <th>title</th>
+                <th>body</th>
+            </tr>
+        </thead>
+        <tbody id="posts">
+
+        </tbody>
+    </table>
+    <script src="fetch.js"></script>
+</body>
+</html>

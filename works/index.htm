@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: rgb(235, 139, 139);
+            height: 730px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+        }
+        .main{
+            background-color: rgba(250, 235, 215, 0.366);
+            margin-top: 20px;
+            margin-bottom: 20px;
+            align-items: center;
+            justify-content: center;
+            width: 75%;
+            border-radius: 20px;
+            display: grid;
+            grid-template-columns: 300px 300px 300px;
+            gap:  0px 52px;
+            padding-left: 50px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+        .divs{
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            height: 250px;
+            width: 250px;
+            border-radius: 20px;
+            background-color: rgba(240, 128, 128, 0.762);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #7c3939a6;
+            font-size: 35px;
+            text-transform: uppercase;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        a{
+            text-decoration: none;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <a href="fetch.html"><div class="divs">post</div></a>
+        <a href=""><div class="divs">comments</div></a>
+        <a href=""><div class="divs">albums</div></a>
+        <div class="divs">photos</div>
+        <div class="divs">todos</div>
+        <div class="divs">users</div>
+    </div>
+</body>
+</html>
